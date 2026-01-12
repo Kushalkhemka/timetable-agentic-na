@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-01-13T01:48:04.282738",
+  "proposal_id": "tool_based_1768249084",
+  "algorithm_used": "tool_based_llm",
+  "total_entries": 131,
+  "generation_time_ms": 212981.6219806671,
+  "config": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "hours": "10:00 - 18:00",
+    "rooms": 30,
+    "room_capacity": 90
+  },
+  "data_stats": {
+    "total_courses": 158,
+    "theory_only_courses": 79,
+    "theory_plus_lab_courses": 79,
+    "total_teachers": 59,
+    "total_students": 2525,
+    "total_sessions_to_schedule": 1064
+  },
+  "scheduling_stats": {
+    "total_required_sessions": 1064,
+    "total_scheduled_sessions": 131,
+    "coverage_percentage": 12.31,
+    "algorithm_used": "tool_based_llm",
+    "generation_time_ms": 212981.62
+  },
+  "memory": {
+    "iterations_recorded": 2,
+    "learnings": [
+      "Avoid: CO415-B1 missing 4 theory hour(s)",
+      "Avoid: IT429-B1 missing 3 theory hour(s)",
+      "Avoid: IT429-B1 missing 2 lab hour(s)",
+      "Algorithm 'llm_driven' performed best with avg score 0.000",
+      "Recurring issue: incomplete_coverage appeared 60 times",
+      "Avoid: EC401-B1 missing 3 theory hour(s)",
+      "Avoid: EC401-B1 missing 2 lab hour(s)",
+      "Avoid: EC401-B2 missing 3 theory hour(s)"
+    ]
+  },
+  "verification": {
+    "is_valid": false,
+    "score": 0.0,
+    "conflicts_count": 318,
+    "feedback": "\u274c Found 318 hard constraint violations:\n  - EC401-B1 missing 3 theory hour(s)\n  - EC401-B1 missing 2 lab hour(s)\n  - EC401-B2 missing 3 theory hour(s)\n  - EC401-B2 missing 2 lab hour(s)\n  - EC401-B3 missing 3 theory hour(s)\n  ... and 313 more\n\u26a0\ufe0f Coverage is only 12.3% of required sessions",
+    "suggestions": [
+      "Find additional slots for unscheduled sessions"
+    ]
+  }
+}
